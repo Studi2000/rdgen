@@ -106,7 +106,7 @@ jobs:
             arch: aarch64,
             target: aarch64-unknown-linux-gnu,
             distro: ubuntu18.04,
-            on: ubuntu-22.04,
+            on: ubuntu-22.04-arm,
             deb_arch: arm64,
             vcpkg-triplet: arm64-linux,
           }
@@ -736,7 +736,7 @@ jobs:
               target: aarch64-unknown-linux-gnu,
               # try out newer flatpak since error of "error: Nothing matches org.freedesktop.Platform in remote flathub"
               distro: ubuntu22.04,
-              on: ubuntu-22.04,
+              on: ubuntu-22.04-arm,
               arch: aarch64,
               suffix: "",
             }
