@@ -654,7 +654,7 @@ jobs:
   build-appimage:
     name: Build appimage ${{ matrix.job.target }}
     needs: [build-rustdesk-linux]
-    runs-on: ubuntu-22.04
+    runs-on: [self-hosted, linux, x64]
     strategy:
       fail-fast: false
       matrix:
